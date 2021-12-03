@@ -1,13 +1,22 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
+import { Logo } from "./Logo";
 
 export function Header() {
   return (
-    <Container>
-      <Typography variant="h1" color="primary.main" align="center">
-        <Box fontFamily="Poppins" padding="26px">
-          Welcome to the Mobtex Olympics
+    <Stack
+      alignItems="center"
+      bgcolor="#181B23"
+      direction="row"
+      justifyContent="space-between"
+      padding={4}
+      spacing={6}
+    >
+      <Typography variant="h1" color="secondary.main">
+        <Box fontFamily="Poppins" padding="10">
+          Mobtex Olympics
         </Box>
       </Typography>
-    </Container>
+      <Logo />
+    </Stack>
   );
 }

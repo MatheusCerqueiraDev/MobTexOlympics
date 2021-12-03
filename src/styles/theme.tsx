@@ -6,12 +6,13 @@ export const theme = createTheme({
       main: "#010101",
     },
     secondary: {
-      main: "#AAAAAA",
+      main: "#FFFFFF",
     },
   },
   typography: {
     fontFamily: ['"Poppins"', "Roboto"].join(","),
     h1: {
+      display: "flex",
       fontFamily: "Poppins",
       fontSize: "34px",
     },

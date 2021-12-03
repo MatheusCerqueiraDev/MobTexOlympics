@@ -1521,6 +1521,13 @@
     prop-types "^15.7.2"
     react-is "^17.0.2"
 
+"@mui/icons-material@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.2.0.tgz#6c6135bb2d7891e29d6f9419df402b82dd663517"
+  integrity sha512-NvyrVaGKpP4R1yFw8BCnE0QcsQ67RtpgxPr4FtH8q60MDYPuPVczLOn5Ash5CFavoDWur/NfM/4DpT54yf3InA==
+  dependencies:
+    "@babel/runtime" "^7.16.3"
+
 "@mui/material@^5.2.2":
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.2.2.tgz#4dfbc9186a83e16a9dcdcc10e4a70ecaf641b1a3"
@@ -2000,6 +2007,13 @@
   version "17.0.11"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
   integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-image-fallback@^8.0.3":
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react-image-fallback/-/react-image-fallback-8.0.3.tgz#b9ada9eefdb68af780cf55bd7b2ead22a8cfce8b"
+  integrity sha512-JdpEMOIqfOJZ+J5H11NxlsCChDddTgyXXEtEiGzZtYoXrlsFMO9t5OAATJp/AqPrwJaaIBXYKur+Z/NC/N/E0g==
   dependencies:
     "@types/react" "*"
 

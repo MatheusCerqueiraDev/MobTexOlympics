@@ -1,32 +1,57 @@
-import { Box, Container, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
-import api from "../../service/api";
-
-interface PostsProps {
-  id: string;
-  name: string;
-  img: string;
-}
+import InfoIcon from "@mui/icons-material/Info";
+import {
+  Box,
+  Container,
+  IconButton,
+  ImageList,
+  ImageListItem,
+  ImageListItemBar,
+  Pagination,
+  Typography,
+} from "@mui/material";
+import { useOlympicImages } from "../../service/hooks/useOlympicImages";
 
 export function Body() {
-  const [post, setPost] = useState([]);
-  function HandlePesquisa() {
-    useEffect(() => {
-      api
-        .get("/teste")
-        .then((response) => setPost(response.data))
-        .catch((err) => {
-          console.error("Erro na requisição dos dados" + err);
-        });
-    }, []);
-  }
+  const { data = [] } = useOlympicImages();
+
   return (
     <Container>
       <Typography variant="h2" color="primary.main" align="center">
-        <Box fontFamily="Roboto" padding="26px">
-          Some memories from our Olympic
+        <Box fontFamily="Roboto" padding="20px">
+          Some memories of our olympics
         </Box>
-        {post.map(data)}
+
+        <Box sx={{ width: "90vw", height: "100vh" }}>
+          <ImageList cols={3} gap={8}>
+            {data.map((data, index) => (
+              <ImageListItem key={index}>
+                <img
+                  onError={(event: any) => {
+                    event.target.src =
+                      "https://randomwordgenerator.com/img/picture-generator/57e9dd464a5aa414f1dc8460962e33791c3ad6e04e50744172297bd59445c7_640.jpg";
+                  }}
+                  src={`${data.img}?w=248&fit=crop&auto=format`}
+                  srcSet={`${data.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                  alt={data.name}
+                  loading="lazy"
+                />
+                <ImageListItemBar
+                  title={data.name}
+                  subtitle={data.id}
+                  actionIcon={
+                    <IconButton
+                      sx={{ color: "rgba(255, 255, 255, 0.54)" }}
+                      aria-label={`info about ${data.name}`}
+                    >
+                      <InfoIcon />
+                    </IconButton>
+                  }
+                />
+              </ImageListItem>
+            ))}
+          </ImageList>
+          <Pagination count={3} shape="rounded" />
+        </Box>
       </Typography>
     </Container>
   );
