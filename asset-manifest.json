@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/mobtexolympics/static/css/main.d765be5c.chunk.css",
+    "main.js": "/mobtexolympics/static/js/main.09e4a9fe.chunk.js",
+    "main.js.map": "/mobtexolympics/static/js/main.09e4a9fe.chunk.js.map",
+    "runtime-main.js": "/mobtexolympics/static/js/runtime-main.36cfdfdb.js",
+    "runtime-main.js.map": "/mobtexolympics/static/js/runtime-main.36cfdfdb.js.map",
+    "static/js/2.e5791661.chunk.js": "/mobtexolympics/static/js/2.e5791661.chunk.js",
+    "static/js/2.e5791661.chunk.js.map": "/mobtexolympics/static/js/2.e5791661.chunk.js.map",
+    "index.html": "/mobtexolympics/index.html",
+    "static/css/main.d765be5c.chunk.css.map": "/mobtexolympics/static/css/main.d765be5c.chunk.css.map",
+    "static/js/2.e5791661.chunk.js.LICENSE.txt": "/mobtexolympics/static/js/2.e5791661.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36cfdfdb.js",
+    "static/js/2.e5791661.chunk.js",
+    "static/css/main.d765be5c.chunk.css",
+    "static/js/main.09e4a9fe.chunk.js"
+  ]
+}
