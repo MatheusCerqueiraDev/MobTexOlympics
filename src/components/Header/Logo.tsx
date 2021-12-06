@@ -9,7 +9,7 @@ export function Logo() {
         justifyContent="space-between"
         spacing={5}
       >
-        <img src="/logo2.svg" alt="Mobtex Logo" />
+        <img src="/logo.svg" alt="Mobtex Logo" />
 
         <img src="/olympic.png" alt="Olympic Logo" />
       </Stack>
